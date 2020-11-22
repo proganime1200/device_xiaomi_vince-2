@@ -242,3 +242,85 @@ wifi.interface=wlan0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.wfd.enable=1 \
 persist.sys.wfd.virtual=0
+
+#HWUI properties
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hwui.texture_cache_size=72 \
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+
+#min/max cpu in core control
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.core_ctl_min_cpu=2 /
+ro.vendor.qti.core_ctl_max_cpu=4
+ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.sys.fw.bservice_limit=5
+ro.vendor.qti.sys.fw.bservice_age=5000
+ro.vendor.qti.am.reschedule_service=true
+
+#GPU
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
+debug.enable.gamed=0
+debug.hwui.renderer=skiagl
+
+#Miscellaneous
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.setupwizard.mode=OPTIONAL \
+mm.enable.smoothstreaming=true
+ro.emmc_size=16GB
+persist.adb.notify=0
+ro.bluetooth.remote.autoconnect=true
+ro.bluetooth.request.master=true
+persist.device_config.runtime_native.usap_pool_enabled=true
+windowsmgr.max_events_per_sec=150
+ro.qualcomm.svi=1
+ro.com.android.mobiledata=false
+persist.radio.prefer_spn=1
+ro.vendor.extension_library=libqti-perfd-client.so
+bluetooth.hfp.client=1
+qemu.hw.mainkeys=0
+ro.sensor.proximity=true
+ro.surface_flinger.protected_contents=true
+sys.thermal.data.path=/data/vendor/thermal
+wifi.interface=wlan0
+fw.max_users=1
+fw.show_multiuserui=0
+fw.show_hidden_users=0
+persist.sys.camera.camera2=true
+persist.vendor.camera.stats.test=5
+persist.vendor.radio.enable_temp_dds=true
+persist.console.silent.config=1
+ro.treble.enabled=true
+ro.sf.compbypass.enable=0
+ro.vendor.qti.config.zram=true
+ro.location.osnlp.package=com.google.android.gms
+persist.loc.nlp_name=com.qualcomm.location
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+debug.qcom_ignore_qperf=true
+debug.qcom_ignore_uxperf=true
+vendor.perf.gestureflingboost.enable=true
+persist.internalAntenna.enable=true
+ro.vendor.qti.config.swap=0
+setupwizard.feature.baseline_setupwizard_enabled=true
+ro.cutoff_voltage_mv=3200
+persist.fuse_sdcard=true
+persist.power.useautobrightadj=true
+ro.opa.eligible_device=true
+ro.control_privapp_permissions=enforce
+ro.hardware.keystore_desede=true
+persist.vendor.qcomsysd.enabled=1
+persist.vendor.max.brightness=409
+persist.vendor.ssr.restart_level=ALL_ENABLE
+DEVICE_PROVISIONED=1
+ro.sf.lcd_density=360
